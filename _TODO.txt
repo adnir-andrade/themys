@@ -22,3 +22,13 @@ Refactoring Node.js code to TypeScript:
 Convert your existing JavaScript codebase to TypeScript gradually, starting with core modules and critical components.
 Update function and variable typings, ensuring strong typing throughout the codebase.
 Leverage TypeScript features such as interfaces, enums, and type annotations to improve code readability and maintainability.
+
+_____
+Installed:
+nextjs, Lint, node, tailwind
+
+To install:
+React
+Typescript
+Mongoose
+MongoDB
