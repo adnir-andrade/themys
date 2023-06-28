@@ -2,5 +2,8 @@ Done:
 nextjs, Lint, node, tailwind, React, Typescript
 
 To install:
-Mongoose
+
 MongoDB
+
+To configure:
+Mongoose
