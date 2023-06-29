@@ -2,7 +2,6 @@ Done:
 nextjs, Lint, node, tailwind, React, Typescript
 
 To install:
-
 MongoDB
 
 To configure:
