@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function logIn() {
   return (
@@ -38,7 +39,9 @@ export default function logIn() {
                   Remember me
                 </label>
               </div>
-              <button className="btn btn-dark themys-button">Submit</button>
+              <Link href="/select-campaign">
+                <button className="btn btn-dark themys-button">Submit</button>
+              </Link>
             </form>
           </div>
         </div>

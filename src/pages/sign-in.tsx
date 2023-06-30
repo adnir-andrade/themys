@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function signIn() {
   return (
@@ -41,7 +42,9 @@ export default function signIn() {
                   required={true}
                 />
               </div>
-              <button className="btn btn-dark themys-button">Sign Up</button>
+              <Link href="/select-campaign">
+                <button className="btn btn-dark themys-button">Sign Up</button>
+              </Link>
             </form>
           </div>
         </div>

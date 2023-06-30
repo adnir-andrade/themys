@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,15 +14,19 @@ export default function Home() {
         />
       </div>
       <div className="d-flex justify-content-center align-items-center container">
-        <button
-          type="button"
-          className="btn btn-dark btn-lg mb-4 themys-button"
-        >
-          Sign In
-        </button>
-        <button type="button" className="btn btn-dark btn-lg themys-button">
-          Log In
-        </button>
+        <Link href="/sign-in">
+          <button
+            type="button"
+            className="btn btn-dark btn-lg mb-4 themys-button"
+          >
+            Sign In
+          </button>
+        </Link>
+        <Link href="/log-in">
+          <button type="button" className="btn btn-dark btn-lg themys-button">
+            Log In
+          </button>
+        </Link>
       </div>
     </main>
   );
