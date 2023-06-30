@@ -5,7 +5,7 @@ export default function campaignView() {
   return (
     <>
       <Head>
-        <title>Select Character</title>
+        <title>Manage Campaign</title>
       </Head>
       <main>
         <div className="d-flex flex-row mb-3 align-items-center justify-content-center p-3">
