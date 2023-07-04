@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import Layout from '../components/layout';
 
 <Head>
   <title>Create Next App</title>
@@ -39,6 +40,13 @@ export default function Home() {
             </button>
           </Link>
         </div>
+
+        <div className="bg-blue-500 text-white p-4">
+          <h1 className="text-2xl font-bold">Hello, Tailwind CSS!</h1>
+          <p className="mt-2">This is a Tailwind CSS example.</p>
+        </div>
+
+        <h1 className="text-3xl font-bold underline">Hello world!</h1>
       </main>
     </>
   );
