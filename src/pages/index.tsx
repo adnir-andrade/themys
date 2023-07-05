@@ -14,16 +14,6 @@ export default function Home() {
         <title>Themys RPG Assistant</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex justify-center items-center h-screen">
-        <div className="bg-blue-500 text-white p-4 rounded">
-          <h1 className="text-2xl font-bold">Hello, Tailwind CSS!</h1>
-          <p className="mt-2">This is a TypeScript/React example.</p>
-          <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded mt-4">
-            Click me
-          </button>
-        </div>
-      </div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
         <div className="position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center">
           <Image
