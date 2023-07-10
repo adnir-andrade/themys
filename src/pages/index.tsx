@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import IMAGES from '../../public/assets/images/index';
 
 <Head>
   <title>Create Next App</title>
@@ -14,11 +15,16 @@ export default function Home() {
         <title>Themys RPG Assistant</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main
+        className="flex min-h-screen flex-col items-center justify-between p-24 bg-cover"
+        style={{
+          backgroundImage: `url(${IMAGES.scrollBg.src})`,
+        }}
+      >
         <div className="position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center">
           <Image
             className="logo"
-            src="/assets/images/logo.jpg"
+            src={`${IMAGES.logo.src}`}
             alt="logo"
             width={1885}
             height={1754}
