@@ -28,11 +28,6 @@ export default function Home() {
           <Button buttonLabel="Sign In" goTo="sign-in" />
           <Button buttonLabel="Log In" goTo="log-in" />
         </div>
-
-        <div className="bg-blue-500 text-white p-4">
-          <h1 className="text-2xl font-bold">Hello, Tailwind CSS!</h1>
-          <p className="mt-2">This is a Tailwind CSS example.</p>
-        </div>
       </main>
     </>
   );

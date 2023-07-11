@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-export default function campaignView() {
+export default function ManageCampaign() {
   return (
     <>
       <Head>
