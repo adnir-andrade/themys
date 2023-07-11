@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           font-family: ${cinzelDecorative700.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

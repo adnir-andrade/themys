@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 import IMAGES from '../../public/assets/images/index';
+import Button from '../components/button';
 
 export default function Home() {
   return (
@@ -24,20 +24,9 @@ export default function Home() {
           layout="fill"
         />
 
-        <div className="d-flex justify-content-center align-items-center container">
-          <Link href="/sign-in">
-            <button
-              type="button"
-              className={`transform transition-all duration-700 w-248 h-90 bg-almost-black rounded-br-60 rounded-bl-20 rounded-tr-20 rounded-tl-60 shadow-4 border-r-2 border-r-orange-100 border-opacity-30 text-4v text-dark-sepia hover:text-amber-300`}
-            >
-              <span className="drop-shadow-font">Sign In</span>
-            </button>
-          </Link>
-          <Link href="/log-in">
-            <button type="button" className="btn btn-dark btn-lg themys-button">
-              Log In
-            </button>
-          </Link>
+        <div className="">
+          <Button buttonLabel="Sign In" goTo="sign-in" />
+          <Button buttonLabel="Log In" goTo="log-in" />
         </div>
 
         <div className="bg-blue-500 text-white p-4">
