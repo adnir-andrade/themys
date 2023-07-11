@@ -27,7 +27,7 @@ module.exports = {
         '4v': '4vmin',
       },
       dropShadow: {
-        font: '1px 2px 1px rgba(0, 0, 0, 0.25)',
+        font: '2px 2px 2px rgba(0, 0, 0, 0.75)',
       },
     },
   },

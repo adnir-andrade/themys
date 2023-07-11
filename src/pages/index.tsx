@@ -3,17 +3,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import IMAGES from '../../public/assets/images/index';
 
-<Head>
-  <title>Create Next App</title>
-  <link rel="icon" href="/favicon.ico" />
-</Head>;
-
 export default function Home() {
   return (
     <>
       <Head>
         <title>Themys RPG Assistant</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="" />
       </Head>
 
       <main
@@ -35,7 +30,7 @@ export default function Home() {
               type="button"
               className={`transform transition-all duration-700 w-248 h-90 bg-almost-black rounded-br-60 rounded-bl-20 rounded-tr-20 rounded-tl-60 shadow-4 border-r-2 border-r-orange-100 border-opacity-30 text-4v text-dark-sepia hover:text-amber-300`}
             >
-              Sign In
+              <span className="drop-shadow-font">Sign In</span>
             </button>
           </Link>
           <Link href="/log-in">
