@@ -15,8 +15,9 @@ export default function Home() {
         <title>Themys RPG Assistant</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main
-        className="flex min-h-screen flex-col items-center justify-between p-24 bg-cover relative"
+        className={`flex min-h-screen flex-col items-center justify-between p-24 bg-cover relative`}
         style={{
           backgroundImage: `url(${IMAGES.scrollBg.src})`,
         }}
@@ -27,11 +28,12 @@ export default function Home() {
           alt="logo"
           layout="fill"
         />
+
         <div className="d-flex justify-content-center align-items-center container">
           <Link href="/sign-in">
             <button
               type="button"
-              className="btn btn-dark btn-lg mb-4 themys-button"
+              className={`transform transition-all duration-700 w-248 h-90 bg-almost-black rounded-br-60 rounded-bl-20 rounded-tr-20 rounded-tl-60 shadow-4 border-r-2 border-r-orange-100 border-opacity-30 text-4v text-dark-sepia hover:text-amber-300`}
             >
               Sign In
             </button>
@@ -47,8 +49,6 @@ export default function Home() {
           <h1 className="text-2xl font-bold">Hello, Tailwind CSS!</h1>
           <p className="mt-2">This is a Tailwind CSS example.</p>
         </div>
-
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
       </main>
     </>
   );
