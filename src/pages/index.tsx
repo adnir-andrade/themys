@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24 bg-cover relative`}
+        className={`flex flex-col items-center justify-center min-h-screen p-24 bg-cover`}
         style={{
           backgroundImage: `url(${IMAGES.scrollBg.src})`,
         }}
@@ -24,7 +24,7 @@ export default function Home() {
           layout="fill"
         />
 
-        <div className="">
+        <div className="grid grid-cols-1 gap-10">
           <Button buttonLabel="Sign In" goTo="sign-in" />
           <Button buttonLabel="Log In" goTo="log-in" />
         </div>
