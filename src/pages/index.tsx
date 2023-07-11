@@ -16,20 +16,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
-        className="flex min-h-screen flex-col items-center justify-between p-24 bg-cover"
+        className="flex min-h-screen flex-col items-center justify-between p-24 bg-cover relative"
         style={{
           backgroundImage: `url(${IMAGES.scrollBg.src})`,
         }}
       >
-        <div className="position-absolute top-0 start-0 bottom-0 end-0 d-flex justify-content-center align-items-center">
-          <Image
-            className="logo"
-            src={`${IMAGES.logo.src}`}
-            alt="logo"
-            width={1885}
-            height={1754}
-          />
-        </div>
+        <Image
+          className="logo mix-blend-color-burn absolute object-cover"
+          src={`${IMAGES.logo.src}`}
+          alt="logo"
+          layout="fill"
+        />
         <div className="d-flex justify-content-center align-items-center container">
           <Link href="/sign-in">
             <button
