@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main
-        className={`flex flex-col items-center justify-center min-h-screen p-24 bg-cover`}
+        className={`flex flex-col items-center justify-center min-h-screen p-t-24 bg-cover`}
         style={{
           backgroundImage: `url(${IMAGES.scrollBg.src})`,
         }}
