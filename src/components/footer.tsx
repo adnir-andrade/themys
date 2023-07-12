@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="bg-almost-black sepia relative z-10 mix-blend-multiply">
-      <h3>@ Adnir Andrade</h3>
+    <div className="bg-almost-black sepia z-10 py-2 mix-blend-multiply flex justify-center text-amber-700">
+      <h5 className="text-sm">Designed and Developed by Adnir "Haotran" A.</h5>
     </div>
   );
 };
