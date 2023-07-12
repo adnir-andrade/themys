@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import IMAGES from '../../public/assets/images/index';
+import Watermark from '@/components/watermark';
 import Button from '../components/button';
+import IMAGES from '../../public/assets/images/index';
 
 export default function Home() {
   return (
@@ -17,12 +17,7 @@ export default function Home() {
           backgroundImage: `url(${IMAGES.scrollBg.src})`,
         }}
       >
-        <Image
-          className="logo mix-blend-color-burn absolute object-cover"
-          src={`${IMAGES.logo.src}`}
-          alt="logo"
-          layout="fill"
-        />
+        <Watermark />
 
         <div className="grid grid-cols-1 gap-10">
           <Button buttonLabel="Sign In" goTo="sign-in" />
