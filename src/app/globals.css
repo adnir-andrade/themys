@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[url('../../public/assets/images/wallpaper-1.jpg')] bg-no-repeat bg-cover bg-center z-[-2];
-  background-image: url('../../public/assets/images/logo.jpg'),
-    url('../../public/assets/images/wallpaper-1.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-blend-mode: color-burn;
+  @apply bg-blend-color-dodge 
+  bg-[url('../../public/assets/images/wallpaper-1.jpg')] 
+  bg-no-repeat 
+  bg-cover 
+  bg-center z-[-2];
 }

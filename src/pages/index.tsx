@@ -17,7 +17,7 @@ export default function Home() {
       <main
         className={`flex flex-col items-center justify-center min-h-screen p-t-24 bg-cover`}
       >
-        {/* <Watermark /> */}
+        <Watermark />
 
         <div className="grid grid-cols-1 gap-10">
           <Button buttonLabel="Sign In" goTo="sign-in" />
