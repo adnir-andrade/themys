@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Watermark from '@/components/watermark';
 import Button from '../components/button';
 import IMAGES from '../../public/assets/images/index';
+import Navbar from '@/components/navbar';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Head>
         <title>Themys RPG Assistant</title>
         <link rel="icon" href="" />
+        <Navbar />
       </Head>
 
       <main
