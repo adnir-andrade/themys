@@ -3,6 +3,7 @@ import Watermark from '@/components/watermark';
 import Button from '../components/button';
 import IMAGES from '../../public/assets/images/index';
 import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <Button buttonLabel="Log In" goTo="log-in" />
         </div>
       </main>
+      <Footer />
     </>
   );
 }

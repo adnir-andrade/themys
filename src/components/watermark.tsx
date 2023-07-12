@@ -5,7 +5,7 @@ import IMAGES from '../../public/assets/images/index';
 export default function Watermark() {
   return (
     <Image
-      className="logo mix-blend-color-burn absolute object-cover"
+      className="logo mix-blend-color-burn object-cover"
       src={`${IMAGES.logo.src}`}
       alt="logo"
       layout="fill"
