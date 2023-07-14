@@ -1,4 +1,5 @@
 import React from 'react';
+import BurnMarks from './burn-marks';
 
 const Footer = () => {
   return (

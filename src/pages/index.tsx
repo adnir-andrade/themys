@@ -1,9 +1,6 @@
 import Head from 'next/head';
-import Header from '@/components/header';
 import Watermark from '@/components/watermark';
 import Button from '../components/button';
-import Footer from '@/components/footer';
-import BurnMarks from '@/components/burn-marks';
 
 export default function Home() {
   return (
@@ -12,7 +9,6 @@ export default function Home() {
         <title>Themys RPG Assistant</title>
         <link rel="icon" href="" />
       </Head>
-      <Header />
 
       <main
         className={`flex flex-col items-center justify-center min-h-screen p-t-24 bg-cover`}
@@ -24,8 +20,6 @@ export default function Home() {
           <Button buttonLabel="Log In" goTo="log-in" />
         </div>
       </main>
-      <BurnMarks isBottom={true} />
-      <Footer />
     </>
   );
 }
