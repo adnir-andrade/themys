@@ -5,7 +5,7 @@ import logo from '../../public/assets/images/logo.jpg';
 export default function Watermark() {
   return (
     <Image
-      className="logo mix-blend-color-burn absolute h-screen object-contain"
+      className="logo mix-blend-color-burn absolute h-screen object-contain animate-pulse-slow"
       src={logo}
       alt="logo"
     />
