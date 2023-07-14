@@ -4,6 +4,7 @@ import Button from '../components/button';
 import IMAGES from '../../public/assets/images/index';
 import Navbar from '@/components/navbar';
 import Footer from '@/components/footer';
+import BurnMarks from '@/components/burn-marks';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Head>
         <title>Themys RPG Assistant</title>
         <link rel="icon" href="" />
+        <BurnMarks isBottom={false} />
         <Navbar />
       </Head>
 
@@ -24,6 +26,7 @@ export default function Home() {
           <Button buttonLabel="Log In" goTo="log-in" />
         </div>
       </main>
+      <BurnMarks isBottom={true} />
       <Footer />
     </>
   );

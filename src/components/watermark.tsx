@@ -11,5 +11,3 @@ export default function Watermark() {
     />
   );
 }
-
-// "logo mix-blend-color-burn absolute object-cover"  md:max-w-3xl
