@@ -8,7 +8,7 @@ export default function BurnMarks({ isBottom }: Props) {
   let gradientDirection = 'bg-gradient-to-b absolute';
 
   if (isBottom) {
-    gradientDirection = 'bg-gradient-to-t bottom-0 fixed';
+    gradientDirection = 'bg-gradient-to-t fixed bottom-0';
   }
 
   return (
