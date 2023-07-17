@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
+import Button from '@/components/button';
 
 export default function LogIn() {
   return (
@@ -14,7 +14,7 @@ export default function LogIn() {
           <div className="row justify-content-center">
             <div className="col-md-12">
               <form id="form">
-                <div className="mb-3 themys-input">
+                <div className="mb-3">
                   <label htmlFor="email" className="form-label" />
                   <input
                     type="email"
@@ -24,7 +24,7 @@ export default function LogIn() {
                     required={true}
                   />
                 </div>
-                <div className="mb-3 themys-input">
+                <div className="mb-3">
                   <label htmlFor="password" className="form-label" />
                   <input
                     type="password"
@@ -45,9 +45,7 @@ export default function LogIn() {
                     Remember me
                   </label>
                 </div>
-                <Link href="/select-campaign">
-                  <button className="btn btn-dark themys-button">Submit</button>
-                </Link>
+                <Button buttonLabel="Submit" goTo="/select-campaign" />
               </form>
             </div>
           </div>
