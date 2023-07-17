@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Button from '@/components/button';
 
 export default function LogIn() {
@@ -9,47 +8,34 @@ export default function LogIn() {
         <title>Log In</title>
       </Head>
 
-      <main>
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-12">
-              <form id="form">
-                <div className="mb-3">
-                  <label htmlFor="email" className="form-label" />
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    placeholder="E-mail"
-                    required={true}
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="password" className="form-label" />
-                  <input
-                    type="password"
-                    className="form-control"
-                    id="password"
-                    placeholder="Password"
-                    minLength={8}
-                    required={true}
-                  />
-                </div>
-                <div className="mb-3 form-check">
-                  <input
-                    type="checkbox"
-                    className="form-check-input"
-                    id="exampleCheck1"
-                  />
-                  <label className="form-check-label" htmlFor="exampleCheck1">
-                    Remember me
-                  </label>
-                </div>
-                <Button buttonLabel="Submit" goTo="/select-campaign" />
-              </form>
-            </div>
+      <main className="flex flex-col items-center justify-center min-h-screen">
+        <form
+          action="/select-campaign"
+          method="post"
+          className="flex flex-col gap-4 w-64 mt-44 mb-44 justify-center"
+        >
+          <input
+            type="email"
+            id="email"
+            placeholder="E-mail"
+            title="Insert a valid e-mail"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            minLength={6}
+            title="Password must contain at least six characters."
+            required
+          />
+          <div>
+            <input type="checkbox" id="remember" />
+            <label htmlFor="remember">Remember me</label>
           </div>
-        </div>
+          {/* <button type="submit">Submit</button> -> TODO: Gotta fix button bellow to have the same behavior as this one*/}
+          <Button buttonLabel="Submit" goTo="/select-campaign" />
+        </form>
       </main>
     </>
   );
