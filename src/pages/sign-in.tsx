@@ -1,5 +1,5 @@
+import Button from '@/components/button';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export default function SignIn() {
@@ -8,54 +8,39 @@ export default function SignIn() {
       <Head>
         <title>Sign In</title>
       </Head>
-      <main>
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-12">
-              <form id="form">
-                <div className="mb-3 themys-input">
-                  <label htmlFor="email" className="form-label" />
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    placeholder="E-mail"
-                    pattern='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'
-                    autoFocus={true}
-                    required={true}
-                  />
-                </div>
-                <div className="mb-3 themys-input">
-                  <label htmlFor="password" className="form-label" />
-                  <input
-                    type="password"
-                    className="form-control"
-                    id="password"
-                    placeholder="Password"
-                    min={8}
-                    required={true}
-                  />
-                </div>
-                <div className="mb-5 themys-input">
-                  <label htmlFor="confirmPassword" className="form-label" />
-                  <input
-                    type="password"
-                    className="form-control"
-                    id="confirmPassword"
-                    placeholder="Confirm Password"
-                    min={8}
-                    required={true}
-                  />
-                </div>
-                <Link href="/select-campaign">
-                  <button className="btn btn-dark themys-button">
-                    Sign Up
-                  </button>
-                </Link>
-              </form>
-            </div>
-          </div>
-        </div>
+      <main className="flex flex-col items-center justify-center min-h-screen">
+        <form
+          action="/select-campaign"
+          method="post"
+          className="flex flex-col gap-4 w-64 mt-44 mb-44 justify-center"
+        >
+          <input
+            type="email"
+            id="email"
+            placeholder="E-mail"
+            title="Insert a valid e-mail"
+            pattern='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$'
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            minLength={6}
+            title="Password must contain at least six characters."
+            required
+          />
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+            minLength={6}
+            title="Password must contain at least six characters."
+            required
+          />
+          {/* <button type="submit">Submit</button> -> TODO: Gotta fix button bellow to have the same behavior as this one*/}
+          <Button buttonLabel="Submit" goTo="/select-campaign" />
+        </form>
       </main>
     </>
   );
