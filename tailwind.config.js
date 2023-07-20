@@ -13,6 +13,7 @@ module.exports = {
         90: '90px',
       },
       colors: {
+        'semi-transparent-black': 'RGBA(0,0,0, 0.5)',
         'almost-black': '#3B3634',
         'dark-sepia': '#cfbe86',
       },
@@ -24,10 +25,14 @@ module.exports = {
         4: '0px 4px 4px rgba(0, 0, 0, 0.5)',
       },
       fontSize: {
+        '3v': '3vmin',
         '4v': '4vmin',
+        '5v': '5vmin',
       },
       dropShadow: {
         font: '2px 2px 2px rgba(0, 0, 0, 0.75)',
+        title: '3px 2px 2px rgba(0, 0, 0, 0.9)',
+        glow: '0px 0px 10px rgba(255, 255, 255, 0.75)',
       },
       backgroundImage: {
         dragons: "url('/assets/images/logo.jpg')",
@@ -40,6 +45,9 @@ module.exports = {
           '0%, 100%': { opacity: 1 },
           '50%': { opacity: 0.2 },
         },
+      },
+      screens: {
+        xsm: '200px',
       },
     },
   },

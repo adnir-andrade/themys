@@ -12,37 +12,37 @@ export default function SelectCampaign() {
       <Head>
         <title>Select Campaign</title>
       </Head>
-      <main>
-        <div className="d-flex flex-row mb-3 align-items-center justify-content-center p-3">
-          <div className="p-2">
-            <Image className="" src={lineLeft} alt="line-left" />
-          </div>
-          <div className="p-2">
-            <h1 className="themys-font-bold title">Select a Campaign</h1>
-          </div>
-          <div className="p-2">
-            <Image className="" src={lineRight} alt="line-right" />
-          </div>
+      <main className="min-[100px]:mx-[5%] sm:mx-[10%]">
+        <div className="grid grid-rows-1 grid-flow-col gap-5 items-center justify-center my-10">
+          <Image className="flex-none" src={lineLeft} alt="line-left" />
+          <h1 className="text-dark-sepia xsm:text-5v sm:text-[28px] md:text-[36px] text-center drop-shadow-title title">
+            Select a Campaign
+          </h1>
+          <Image className="flex-none" src={lineRight} alt="line-right" />
         </div>
-        <div className="position-relative d-flex flex-column mb-3 align-items-center">
-          <div className="transp-bg">
-            <div className="my-4 p-2">
-              <div className="d-flex flex-column mb-3 align-items-center" />
-              <div
-                id="option-buttons"
-                className="d-flex flex-row mb-3 align-items-center justify-content-evenly"
-              >
-                <button className="p-2 semi-transp custom-button" id="sort">
-                  <Image className="" src={sortIcon} alt="sort" />
-                </button>
-                <button className="p-2 semi-transp custom-button" id="add">
-                  <Image className="" src={addIcon} alt="add" />
-                </button>
-                <button className="p-2 semi-transp custom-button" id="settings">
-                  <Image className="" src={settingsIcon} alt="settings" />
-                </button>
-              </div>
-            </div>
+        <div className="transp-bg h-4/5 xsm:w-full sm:w-auto bg-semi-transparent-black rounded-t-[20px] rounded-b-xl mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 min-h-[60vh] justify-center text-center gap-5 mb-3 py-10 px-5">
+            <p>Content goes here...</p>
+            <p>Content goes here...</p>
+            <p>Content goes here...</p>
+          </div>
+          <div className="flex flex-row justify-evenly pb-5 ">
+            {/* TODO: Refactor semi-transp and custom-button to images bellow. Turn then into buttons */}
+            <Image
+              className="p-2 hover:drop-shadow-glow duration-700"
+              src={sortIcon}
+              alt="sort"
+            />
+            <Image
+              className="p-2 hover:drop-shadow-glow duration-700"
+              src={addIcon}
+              alt="add"
+            />
+            <Image
+              className="p-2 hover:drop-shadow-glow duration-700"
+              src={settingsIcon}
+              alt="settings"
+            />
           </div>
         </div>
       </main>
