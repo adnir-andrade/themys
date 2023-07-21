@@ -21,7 +21,7 @@ export default function SelectCampaign() {
             <p>Content goes here...</p>
           </div>
           <div className="flex flex-row justify-evenly pb-5 ">
-            {/* TODO: Refactor semi-transp and custom-button to images bellow. Turn then into buttons */}
+            {/* TODO: Refactor - Convert those to buttons */}
             <Image
               className="hover:drop-shadow-glow duration-700"
               src={sortIcon}
