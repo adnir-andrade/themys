@@ -3,7 +3,7 @@ import sortIcon from '../../public/assets/icons/sort.svg';
 import addIcon from '../../public/assets/icons/add.svg';
 import settingsIcon from '../../public/assets/icons/settings.svg';
 
-const UtilityButtons = () => {
+export default function UtilityButtons() {
   return (
     <div className="flex flex-row justify-evenly pb-5 ">
       {/* TODO: Refactor - Convert those to buttons */}
@@ -24,6 +24,4 @@ const UtilityButtons = () => {
       />
     </div>
   );
-};
-
-export default UtilityButtons;
+}

@@ -7,7 +7,7 @@ type Props = {
   pageTitle: string;
 };
 
-const PageTitle = ({ pageTitle }: Props) => {
+export default function PageTitle({ pageTitle }: Props) {
   return (
     <div className="grid grid-rows-1 grid-flow-col gap-5 items-center justify-center my-10">
       <Image className="flex-none" src={lineLeft} alt="line-left" />
@@ -17,6 +17,4 @@ const PageTitle = ({ pageTitle }: Props) => {
       <Image className="flex-none" src={lineRight} alt="line-right" />
     </div>
   );
-};
-
-export default PageTitle;
+}

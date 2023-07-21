@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Navbar = () => {
+export default function Navbar() {
   return (
     <nav className="bg-almost-black sepia z-10 mix-blend-multiply py-3 flex items-center justify-between px-5">
       <div className="text-amber-200 text-2xl font-bold z-10 sm:basis-2/3">
@@ -16,6 +16,4 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
-
-export default Navbar;
+}
