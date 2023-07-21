@@ -5,6 +5,7 @@ import lineRight from '../../public/assets/icons/line-right.svg';
 import sortIcon from '../../public/assets/icons/sort.svg';
 import addIcon from '../../public/assets/icons/add.svg';
 import settingsIcon from '../../public/assets/icons/settings.svg';
+import TranslucentContainer from '@/components/translucent-box';
 
 export default function SelectCampaign() {
   return (
@@ -20,7 +21,7 @@ export default function SelectCampaign() {
           </h1>
           <Image className="flex-none" src={lineRight} alt="line-right" />
         </div>
-        <div className="h-4/5 xsm:w-full sm:w-auto bg-semi-transparent-black rounded-t-[20px] rounded-b-xl mb-10">
+        <TranslucentContainer>
           <div className="grid grid-cols-1 md:grid-cols-3 min-h-[60vh] justify-center text-center gap-5 mb-3 py-10 px-5">
             <p>Content goes here...</p>
             <p>Content goes here...</p>
@@ -44,7 +45,7 @@ export default function SelectCampaign() {
               alt="settings"
             />
           </div>
-        </div>
+        </TranslucentContainer>
       </main>
     </>
   );
