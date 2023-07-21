@@ -1,10 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import sortIcon from '../../public/assets/icons/sort.svg';
-import addIcon from '../../public/assets/icons/add.svg';
-import settingsIcon from '../../public/assets/icons/settings.svg';
 import TranslucentContainer from '@/components/translucent-box';
 import PageTitle from '@/components/page-title';
+import UtilityButtons from '@/components/utility-buttons';
 
 export default function SelectCampaign() {
   return (
@@ -20,24 +17,7 @@ export default function SelectCampaign() {
             <p>Content goes here...</p>
             <p>Content goes here...</p>
           </div>
-          <div className="flex flex-row justify-evenly pb-5 ">
-            {/* TODO: Refactor - Convert those to buttons */}
-            <Image
-              className="hover:drop-shadow-glow duration-700"
-              src={sortIcon}
-              alt="sort"
-            />
-            <Image
-              className="hover:drop-shadow-glow duration-700"
-              src={addIcon}
-              alt="add"
-            />
-            <Image
-              className="hover:drop-shadow-glow duration-700"
-              src={settingsIcon}
-              alt="settings"
-            />
-          </div>
+          <UtilityButtons />
         </TranslucentContainer>
       </main>
     </>
