@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav className="bg-almost-black sepia relative z-10 mix-blend-multiply">
-      <div className="container mx-auto px-12 py-3 flex items-center justify-between">
-        <div className="text-amber-200 text-2xl font-bold z-10">
-          <Link href="/">Themys</Link>
-        </div>
-        <div className="space-x-4 text-amber-200">
-          <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
-        </div>
+    <nav className="bg-almost-black sepia z-10 mix-blend-multiply py-3 flex items-center justify-between px-5">
+      <div className="text-amber-200 text-2xl font-bold z-10 sm:basis-2/3">
+        <Link className="text-[20px]" href="/">
+          Themys
+        </Link>
+      </div>
+      <div className="text-amber-200 xsm:space-x-3 sm:space-x-7">
+        <Link href="/">Home</Link>
+        <Link href="/about">About</Link>
+        <Link href="/contact">Contact</Link>
       </div>
     </nav>
   );
