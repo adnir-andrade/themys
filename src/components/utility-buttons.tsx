@@ -2,16 +2,21 @@ import Image from 'next/image';
 import sortIcon from '../../public/assets/icons/sort.svg';
 import addIcon from '../../public/assets/icons/add.svg';
 import settingsIcon from '../../public/assets/icons/settings.svg';
-
-const clickHandler = () => {
-  console.log('Testing click handler');
-};
-
-const addCampaign = () => {
-  console.log('Testing add campaign');
-};
+import Modal from './modal';
+import { useState } from 'react';
 
 export default function UtilityButtons() {
+  const [showModal, setShowModal] = useState(false);
+
+  const addCampaign = () => {
+    setShowModal(true);
+    console.log('Testing add campaign');
+  };
+
+  const clickHandler = () => {
+    console.log('Testing click handler');
+  };
+
   return (
     <div className="flex flex-row justify-evenly pb-5 ">
       {/* TODO: Refactor - Convert those to buttons */}
@@ -29,6 +34,11 @@ export default function UtilityButtons() {
           alt="add"
         />
       </button>
+      {showModal && (
+        <Modal onClose={() => setShowModal(false)}>
+          <p>Content goes here...</p>
+        </Modal>
+      )}
       <button onClick={clickHandler}>
         <Image
           className="hover:drop-shadow-glow duration-700"
