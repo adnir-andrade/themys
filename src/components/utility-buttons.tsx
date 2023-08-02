@@ -8,44 +8,48 @@ import { useState } from 'react';
 export default function UtilityButtons() {
   const [showModal, setShowModal] = useState(false);
 
-  const addCampaign = () => {
+  const openModal = () => {
     setShowModal(true);
-    console.log('Testing add campaign');
-  };
-
-  const clickHandler = () => {
-    console.log('Testing click handler');
   };
 
   return (
+    //TODO: Make placeholder content for each utility button. Make modal content unique to each placeholder.
     <div className="flex flex-row justify-evenly pb-5 ">
-      {/* TODO: Refactor - Convert those to buttons */}
-      <button onClick={clickHandler}>
+      <button onClick={openModal} id="sort-button">
         <Image
           className="hover:drop-shadow-glow duration-700"
           src={sortIcon}
           alt="sort"
         />
       </button>
-      <button onClick={addCampaign}>
+
+      <button onClick={openModal} id="add-button">
         <Image
           className="hover:drop-shadow-glow duration-700"
           src={addIcon}
           alt="add"
         />
       </button>
-      {showModal && (
-        <Modal onClose={() => setShowModal(false)}>
-          <p>Content goes here...</p>
-        </Modal>
-      )}
-      <button onClick={clickHandler}>
+
+      <button onClick={openModal} id="setting-button">
         <Image
           className="hover:drop-shadow-glow duration-700"
           src={settingsIcon}
           alt="settings"
         />
       </button>
+
+      {showModal && (
+        <Modal onClose={() => setShowModal(false)}>
+          <p>Content goes here...</p>
+        </Modal>
+      )}
+
+      {showModal && (
+        <Modal onClose={() => setShowModal(false)}>
+          <p>Test goes here...</p>
+        </Modal>
+      )}
     </div>
   );
 }
